@@ -11,3 +11,17 @@ for(var i=0; i< links.length; i++) {
     }
 }
 
+/////////////
+
+var links = document.getElementsByTagName("a");
+
+for(var i=0; i< links.length; i++) {
+    try {
+        var downloadLink = links[i].href;
+        if (downloadLink.indexOf("thunder://") >-1){
+          console.log(downloadLink);
+        }
+    } catch(error) {
+        
+    }
+}
